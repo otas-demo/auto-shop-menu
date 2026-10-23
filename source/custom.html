@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="my">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Custom POS · Auto Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+Myanmar:wght@400;600;700&family=Poppins:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <nav class="nav" aria-label="Menu"><a class="brand" href="index.html"><span class="wm">AUTO<br>SHOP</span><span class="tag">Retail &amp; Wholesale<br>Management Software</span></a><div class="links"><a href="index.html#pos">POS</a><a href="custom.html" aria-current="page">Custom POS</a><a href="index.html#ai">AI Order</a><a href="hardware.html">Hardware</a></div></nav>
+    <div class="hero">
+      <a class="back" href="index.html#pos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Menu</a>
+      <div class="hero-head"><span class="who">ကိုယ်ပိုင်စနစ်</span><h1 class="latin">Custom POS</h1><p class="hero-price"><b>၁၅ သိန်းမှ</b><span>တစ်ကြိမ်တည်း ပေး</span></p></div>
+      <p class="lede">ကိုယ်ပိုင် system တစ်ခုကို အချိန်ပေးပြီး အစကနေ တည်ဆောက်လိုသူများအတွက်ပါ။ လိုတဲ့ feature ကို ရွေးပြီး ဈေးကို ချက်ချင်း တွက်ကြည့်ပါ။</p>
+      <div class="pills"><span>တည်ဆောက်ချိန် ၄ ပတ်ခန့်မှ</span><span>ငွေပေးချေ ၆၀% + ၄၀%</span></div>
+    </div>
+  </div>
+</header>
+<main class="wrap has-bar">
+  <section class="sec" aria-labelledby="h-s1">
+    <div class="step-h"><span class="step-n">၁</span><h2 id="h-s1">အခြေခံမှာ ပါပြီးသား · ၁၅ သိန်း</h2></div>
+    <div class="chips"><span>အရောင်းနဲ့ ဘောင်ချာ</span><span>အဝယ်</span><span>Stock</span><span>အသုံးစရိတ်</span><span>နေ့စဉ်စာရင်း</span><span>ငွေစာရင်းချုပ်</span><span>ဆိုင်ရဲ့ logo၊ အရောင်</span><span>ဘောင်ချာပုံစံ ၁ မျိုး</span><span>User ၅ ယောက်</span><span>ဆိုင် ၁ ဆိုင်</span><span>သင်တန်း ၂ ကြိမ်</span><span>၃ လ အမှားပြင် အခမဲ့</span></div>
+  </section>
+  <section class="sec" aria-labelledby="h-s2">
+    <div class="calc">
+      <div class="calc-main">
+        <div class="step-h"><span class="step-n">၂</span><h2 id="h-s2">ထပ်လိုတာ ရွေးပါ</h2></div>
+        <p class="step-hint">Feature တစ်ခုချင်းရဲ့ “ဘာလုပ်ပေးလဲ · ဘယ်သူ့အတွက်လဲ” ကို နှိပ်ပြီး အသေးစိတ် ဖတ်ကြည့်ပါ။</p>
+        <div class="cat-tabs" role="tablist" aria-label="Feature အမျိုးအစား" id="tabs"></div>
+        <div id="menu"></div>
+      </div>
+      <aside class="calc-side" aria-labelledby="h-s3">
+        <div class="step-h"><span class="step-n">၃</span><h2 id="h-s3">ဈေး</h2></div>
+        <div class="receipt-shell"><div class="receipt" id="receipt"></div></div>
+        <div class="row-btns" style="margin-top:4px">
+          <button type="button" class="btn btn-primary" id="copy" style="flex:1 1 auto">Copy ကူးရန်</button>
+          <button type="button" class="btn" id="clear">အကုန်ဖြုတ်</button>
+        </div>
+        <p class="hint" id="copy-hint" hidden>Copy မကူးနိုင်ပါ။ အောက်က စာကို ဖိပြီး ကူးပါ။</p>
+        <textarea id="copy-fallback" class="fallback" rows="8" readonly hidden></textarea>
+        <p class="not-in"><b>ဈေးထဲ မပါတာ</b> — Server ခ (လစဉ် USD ၆ မှ)၊ ၃ လနောက် ထိန်းသိမ်းခ (နှစ်စဉ် ၁၅%)၊ AI သုံးစွဲခ၊ <a href="hardware.html">စက်ပစ္စည်း</a></p>
+      </aside>
+    </div>
+  </section>
+</main>
+<div class="totalbar" id="totalbar">
+  <div class="tb-text"><span id="tb-count"></span><b id="tb-total"></b></div>
+  <button type="button" class="btn btn-light" id="tb-go">ဈေး ကြည့်ရန်</button>
+</div>
+
+<footer class="band">
+  <div class="wrap foot-in">
+    <div><p class="foot-h">ဆက်သွယ်ရန်</p><p class="foot-p">ဘယ်ဟာ ကိုက်လဲ မသေချာရင် မေးပါ။ ရွေးပေးပါမယ်။</p></div>
+    <div class="contacts">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="sel">09-790673433</span></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="sel">info@otastechsolutions.com</span></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><a href="https://www.otastechsolutions.com" target="_blank" rel="noopener">www.otastechsolutions.com</a></span>
+    </div>
+    <p class="foot-fine">ဈေးနှုန်း ၂၀၂၆ အောက်တိုဘာ · quotation မှာ အတည်ပြုပါမယ် · Auto Shop by OTAS Tech Solutions Co., Ltd.</p>
+  </div>
+</footer>
+<script src="custom-data.js"></script>
+<script src="custom.js"></script>
+</body>
+</html>

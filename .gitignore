@@ -1,24 +1,10 @@
-# dependencies
-/node_modules
-
-# next.js
-/.next/
+# build output (Cloudflare Pages builds it from source/)
 /out/
-
-# production
-/build
 
 # misc
 .DS_Store
-*.pem
-
-# debug
-npm-debug.log*
+node_modules/
 
 # env files
 .env*
 !.env.example
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
